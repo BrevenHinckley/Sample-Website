@@ -1,0 +1,567 @@
+/*
+   Winter, Edwards, and Boyd LLC style sheet
+   Filename: styles.css
+   
+   Author:   Breven G. Hinckley
+   Date:     05-05-17
+*/
+
+/* reset styles */
+html {
+   font-size: 14px;
+}
+a, article, body, div, fieldset, figcaption, figure, footer, form, header, h1,
+h2, h3, img, input, label, legend, li, nav, p, table, tbody, td, th, thead, textarea, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+ol, ul{
+   list-style-type: none;
+}
+
+/* document-wide styles */
+body {
+   background: WhiteSmoke;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+   font-size: 1.5em;
+}
+
+/* body and page container */
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   background: white;
+   border-right: 2px solid black;
+   border-left: 2px solid black;
+   box-shadow: -0.01em 0 0.02em 0.03em black;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: dodgerblue;
+   background-color: lightgray;
+   text-align: center;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+nav.sitenavigation li {
+   margin: 0.3em 1em;
+   display: inline-block;
+   font-size: 1.55em;
+   line-height: 1.32em;
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: dodgerblue;
+}
+nav.sitenavigation a:visited {
+   color: IndianRed;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: floralwhite;
+}
+nav.sub {
+   border-top: none;
+}
+
+/* non nav links */
+a.nonNav:link {
+   text-decoration: none;
+   color: dodgerblue;
+}
+a.nonNav:visited {
+   color: IndianRed;
+}
+a.nonNav:hover, a.nonNav:focus {
+   color: rgb(242, 242, 242);
+   background-color: dodgerblue;
+}
+
+/* main content */
+.textheading {
+   text-align: center;
+   font-size: 2.5em;
+   font-family: "Times New Roman", Times, serif;
+   margin-top: 0.8em;
+   margin-bottom: 0.85em;
+}
+h2.welcome {
+   font-size: 2.5em;
+   margin: 1em 0 0.25em 1.3em;
+   font-family: "Times New Roman", Times, serif;
+}
+h3.welcome {
+   font-size: 1.9em;
+   margin: 0 0 0.6em 1.9em;
+   font-family: "Times New Roman", Times, serif;
+}
+.stripe {
+   border-bottom: 2px dashed dodgerblue;
+   width: 75%;
+   margin-left: 3.6em;
+   margin-bottom: 1em;
+}
+.contact {
+   font-size: 1.8em;
+   margin: 1.1em 0 .25em 3em;
+   font-family: "Times New Roman", Times, serif;
+}
+.contactText {
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+   font-size: 1.4em;
+   line-height: 1.5em;
+   margin: 1.3em 1.5em 1em 5em;
+}
+.thanks {
+   font-family: "Times New Roman", Times, serif;
+   font-size: 1.6em;
+   margin: 3em 3em;
+}
+article p.text {
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+   font-size: 1.2em;
+   line-height: 1.5em;
+   margin: 1.3em 1.5em 1em 1.5em;
+}
+article p.distance {
+   margin-bottom: 5em;
+}
+#aAndb, #investman, #filing {
+   font-size: 2.15em;
+   margin: 1em 0 0.25em 1.3em;
+   font-family: "Times New Roman", Times, serif;
+}
+.about {
+   font-size: 2.15em;
+   margin: 1em 0 0.25em 1.3em;
+   font-family: "Times New Roman", Times, serif;
+}
+.testimonial {
+   width: 14%;
+   border: 1px solid rgb(242,242,242);
+   border-radius: 15px;
+   padding: 1.2em;
+   background-color: dodgerblue;
+   color: rgb(242,242,242);
+   float: right;
+   font-size: 1.5em;
+   font-style: italic;
+   margin: 0 2.2em 1em 1.7em;
+   box-shadow: 0.3em 0.4em 0.4em 0.2em lightgray;
+}
+.theSecond {
+	float: left;
+	margin: 0.7em 1.9em 1em 1.7em;
+	box-shadow: 0.2em 0.2em 0.3em 0.1em lightgray;
+}
+#video {
+   border: none;
+   margin: 1.8em 5em 5em 5em;
+}
+
+/* images */
+article figure.welcomeImage {
+   margin: 1em 1.3em 0 0.5em;
+   float: right;
+}
+article figure.welcomeImage img {
+   border: 1px solid dodgerblue;
+   border-radius: 5%;
+   box-shadow: 0.01em 0.01em 0.01em 0.01em black;
+}
+article figure.welcomeImage figcaption {
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.16em;
+   margin-top: -0.22em;
+}
+.serviceImage {
+   width: 40%;
+   float: right;
+   margin-top: 1em;
+   margin-left: 1.3em;
+}
+.left {
+   float: left;
+}
+.serviceBorder {
+   border: 1px solid dodgerblue;
+   border-radius: 5%;
+   box-shadow: 0.01em 0.01em 0.01em 0.01em black;
+}
+.headshot {
+   border: 1px solid lightgray;
+   border-radius: 10%;
+   box-shadow: 0.05em 0.05em 0.1em 0.1em lightgray;
+}
+.involvement img {
+   display: block;
+   float: left;
+   border-radius: 5%;
+   margin: 1em 1.2em 3em 1.3em;
+   box-shadow: 0.12em 0.22em 0.2em 0.1em lightgray;
+}
+
+/* main content table */
+table {
+   margin: 0 auto;
+   margin-top: 3.5em;
+   margin-bottom: 6em;
+   padding: 1em;
+   border: 1px solid lightgray;
+}
+td {
+   padding: 0.4em 1.5em 0 2em;
+   font-size: 1.75em;
+   /* vertical-align: bottom; */
+   text-align: center;
+}
+th {
+   text-align: center;
+   text-shadow: 0.02em 0.02em 0.02em rgb(242,242,242);
+   font-size: 2.5em;
+   padding: 0.5em;
+   border: 1.5px solid lightgray;
+   background-color: lightskyblue;
+   box-shadow: 0.04em 0.04em 0.09em 0.09em rgb(242,242,242);
+}
+
+/* form container */
+.formContainer {
+   min-width: 400px;
+   max-width: 600px;
+   margin: 1em auto;
+   padding: 0 3% 1em;
+   background-color: rgb(230, 242, 255);
+   border: 1px solid black;
+}
+.formContainer h2 {
+   text-align: center;
+   font-size: 2.2em;
+   font-weight: bold;
+   margin-top: 0.5em;
+}
+
+/* form styles */
+form {
+   padding: 20px;
+}
+.form-instructions {
+   color: red;
+   text-align: center;
+   font-size: 1.3em;
+   margin-bottom: 0.5em;
+}
+
+/* fieldset styles */
+fieldset {
+   margin-bottom: 1.3em;
+}
+legend {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-left: -0.1em;
+}
+fieldset.serviceinfo, fieldset.contactpref {
+   margin-bottom: 1.5em;
+}
+fieldset.serviceinfo legend, fieldset.contactpref legend {
+   margin-bottom: 0.2em;
+}
+
+/* field styles */
+.contactinfo input, textarea {
+   border: 1px solid #ccc;
+   padding: 0.2em;
+   font-size: 1em;
+}
+textarea {
+   margin-bottom: 1em;
+   margin-top: 0.5em;
+   margin-left: -0.1em;
+}
+.contactinfo input {
+   position: absolute;
+   left: 5em;
+}
+#nameinput, #emailinput, #addressinput {
+   width: 25em;
+}
+#phoneinput, #cityinput, #stateinput #zipinput {
+   width: 12em;
+}
+#submit {
+   border: 1px solid black;
+   padding: 0.4em 0.6em;
+   background-color: #e3d5ba;
+   font-size: 1.25em;
+   border-radius: 10px;
+}
+#reset {
+   border: 1px solid black;
+   padding: 0.4em 0.6em;
+   background-color: #e3d5ba;
+   font-size: 1.25em;
+   border-radius: 10px;
+}
+fieldset.submitbutton, fieldset.resetbutton {
+   display: inline-block;
+   margin-right: 12em;
+   margin-bottom: 0;
+}
+input:focus, textarea:focus {
+   background-color: ivory;
+}
+
+/* label styles */
+label {
+   font-size: 1.3em;
+   line-height: 1.6em;
+}
+.contactinfo label {
+   display: block;
+   position: relative;
+   margin: 0.8em 0;
+}
+.contactpref label {
+   margin-right: 1.6em;
+}
+.serviceinfo label {
+   margin-right: 0.7em;
+}
+fieldset.contactinfo label:after {
+   content: " *";
+   color: red;
+}
+
+/* footer section */
+footer {
+   text-align: center;
+   font-size: 1.2em;
+   background: lightgray;
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+   color: black;
+   padding: 0.4em;
+}
+
+/* responsive design section */
+
+/* Better position for some images at this breakpoint, lower text size of a mostly unimportant thing */
+@media screen and (max-width: 1150px) {
+   .serviceImage {
+      float: left;
+	  margin-right: 2em;
+   }
+   .thanks {
+      font-size: 1.5em;
+   }
+}
+
+/* Makes testimonials more rectangular with the decreasing screen size, lowering .thanks and td more will continue */
+@media screen and (max-width: 999px) {
+   .testimonial {
+      width: 25%;
+   }
+   .thanks {
+      font-size: 1.4em;
+   }
+   td {
+      font-size: 1.65em;
+   }
+}
+
+/* Removes figcaption for extra space, changes index page image to be more responsive */
+@media screen and (max-width: 899px), print {
+   figcaption {
+      display: none;
+   }
+   article figure.welcomeImage {
+      width: 40%;
+   }
+   .thanks {
+      font-size: 1.2em;
+   }
+   td {
+      font-size: 1.5em;
+   }
+}
+
+/* Moves index page image to a better location for this breakpoint, more text size reduction for space */
+@media screen and (max-width: 799px) {
+   article figure.welcomeImage {
+      float: left;
+   }
+   .contact {
+      font-size: 1.6em;
+   }
+   td {
+      font-size: 1.4em;
+   }
+}
+
+/* Major breakpoint for removing images as they no longer fit the design space, including the embedded youtube video.
+   Other adjustments include lowering text size, adjusting some form inputs to able to fit at this breakpoint, and table 
+   spacing adjustments. */
+@media screen and (max-width: 699px), print {
+   .serviceImage {
+      display: none;
+   }
+   article figure.welcomeImage {
+      display: none;
+   }
+   .contact {
+      font-size: 1.4em;
+   }
+   .contactText {
+      font-size: 1.2em;
+   }
+   .textheading {
+      font-size: 2.2em;
+   }
+   #nameinput, #emailinput, #addressinput {
+      width: 18em;
+   }
+   textarea {
+      margin-left: -1.8em;
+   }
+   td {
+	  font-size: 1.2em; 
+   }
+   th {
+      font-size: 2.4em;
+   }
+   iframe {
+	  display: none; 
+   }
+}
+
+/* Removed the reset button on the form due to not wanting it to be too close to the submit button. */
+@media screen and (max-width: 599px) {
+   .serviceinfo label {
+      margin-right: 0.3em;
+   }
+   fieldset.resetbutton {
+      display: none;
+   }
+   td {
+	  font-size: 1em; 
+   }
+}
+
+/* At this breakpoint I am cutting pretty much anything non essential for the website to still function and look good. */
+@media screen and (max-width: 484px), print {
+   nav.sitenavigation li {
+      font-size: 1.1em;
+      line-height: 1.32em;
+   }
+   .testimonial {
+      display: none;
+   }
+   .thanks {
+      display: none;
+   }
+   .contact {
+      font-size: 1.15em;
+   }
+   .contactText {
+      font-size: 1.1em;
+   }
+   .textheading {
+      font-size: 1.7em;
+   }
+   #nameinput, #emailinput, #addressinput {
+      width: 12em;
+   }
+   td {
+      font-size: 0.8em;
+   }
+   th {
+	  font-size: 1.85em;
+   }
+   .involvement {
+	  display: none; 
+   }
+}
+
+/* Had to remove the additional information section from the form to make it capable of fitting on the screen at this breakpoint. */
+@media screen and (max-width: 479px) {
+   .additionalinfo {
+      display: none;
+   }
+}
+
+/* This breakpoint will only be seen by older and smaller phones. No more cutting of content necessary,
+   just table and nav size adjustments. */
+@media screen and (max-width: 356px) {
+	nav.sitenavigation li {
+       font-size: 0.98em;
+   }
+   td {
+	  font-size: 0.75em;
+   }
+   th {
+      font-size: 1.7em;
+   }
+}
+
+/* print styles */
+@media print {
+   nav {
+      display: none;
+   }
+   .container {
+	  border: none; 
+   }
+   .stripe {
+	  display: none;
+   }
+   article, body, footer {
+	  color: #000;
+	  background-color: #fff;
+   }
+   footer {
+	  border-top: none;
+   }
+   header {
+	  display: none;
+   }
+   fieldset.contactinfo label:after {
+	  color: black;
+   }
+   .form-instructions {
+	  color: black;
+   }
+   .headshot {
+	  display: none;
+   }
+   th {
+	  font-size: 1.5em;
+   }
+}
+@page {
+   margin: .75in;
+}

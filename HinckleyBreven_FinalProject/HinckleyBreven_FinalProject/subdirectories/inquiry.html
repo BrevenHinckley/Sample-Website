@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Submit An Inquiry</title>
+	  <!--
+	     Winter, Edwards, and Boyd LLC inquiry page
+		 Filename: inquiry.html
+		 
+		 Author:   Breven G. Hinckley
+		 Date:     05-05-17
+	  -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <script src="../modernizr.custom.62074.js"></script>
+	  <link rel="stylesheet" href="../styles.css">
+	  <link rel="shortcut icon" href="../images/favicon.ico">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <div class="container">
+         <header>
+            <h1>
+	           <a href="../index.html"><img src="../images/weblogo.svg" width="1200" height="150" alt="W.E.B. company logo"></a>
+            </h1>
+         </header>
+		 <nav class="sitenavigation">
+	        <ul>
+			   <li><a href="../index.html">Home</a></li>
+               <li><a href="../aboutus.html">About Us</a></li>
+               <li><a href="../services.html">Services</a></li>
+			   <li><a href="../contact.html">Contact</a></li>
+		    </ul>
+		 </nav>
+		 <article id="contentstart">
+		    <div class="formContainer">
+		       <h2>Submit an Inquiry</h2>
+			   <form action="mailto:inquiry@WEBMail.org" autocomplete="on" method="post" name="inquiryform">
+			      <p class="form-instructions">* indicates a required field</p>
+			      <fieldset class="contactinfo">
+			         <legend>Contact Information</legend>
+				     <label for="nameinput">
+				        Name
+					    <input type="text" name="name" id="nameinput" placeholder="First and last name">
+				     </label>
+					 <label for="addressinput">
+					    Address
+						<input type="text" name="address" id="addressinput" placeholder="123 placeholder street">
+					 </label>
+					 <label for="cityinput">
+					    City
+						<input type="text" name="city" id="cityinput" placeholder="City Name">
+					 </label>
+					 <label for="stateinput">
+					    State
+						<input type="text" name="state" id="stateinput" placeholder="State abbreviation">
+					 </label>
+					 <label for="zipinput">
+					    Zip Code
+						<input type="text" name="zip" id="zipinput" placeholder="Ex: 12345">
+					 </label>
+				     <label for="emailinput">
+				        Email
+					    <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+				     </label>
+				     <label for="phoneinput">
+				        Phone
+					    <input type="tel" name="phone" id="phoneinput" placeholder="(555)555-5555">
+				     </label>
+			      </fieldset>
+				  <fieldset class="contactpref">
+				     <legend>What is your contact preference?</legend>
+					 <label for="phone">
+					    <input type="radio" name="preference" id="phone" value="Phone" checked>
+						Phone
+					 </label>
+					 <label for="email">
+					    <input type="radio" name="preference" id="email" value="E-Mail">
+						E-Mail
+					 </label>
+					 <label for="other">
+					    <input type="radio" name="preference" id="other" value="Other">
+						Other (specify below)
+					 </label>
+			      </fieldset>
+			      <fieldset class="serviceinfo">
+				     <legend>Which Service Are You Inquiring About?</legend>
+					 <label for="accounting">
+					    <input type="checkbox" id="accounting" value="Accounting" name="service">
+						Accounting
+					 </label>
+					 <label for="bookkeeping">
+					    <input type="checkbox" id="bookkeeping" value="Bookkeeping" name="service">
+						Bookkeeping
+					 </label>
+					 <label for="investment">
+					    <input type="checkbox" id="investment" value="Investment Management" name="service">
+						Investment Management
+					 </label>
+					 <label for="tax">
+					    <input type="checkbox" id="tax" value="Tax Filing" name="service">
+						Tax Filing
+					 </label>
+			      </fieldset>
+			      <fieldset class="additionalinfo">
+			         <legend>Additional Information</legend>
+				     <label for="feedback">
+				        Feedback, special requests, or other information
+					    <textarea name="feedback" id="feedback" rows="4" cols="42">
+					    </textarea>
+				     </label>
+			      </fieldset>
+			      <fieldset class="submitbutton">
+			         <input type="submit" id="submit" value="Submit">
+			      </fieldset>
+				  <fieldset class="resetbutton">
+				     <input type="reset" id="reset">
+				  </fieldset>
+			   </form>
+			</div>
+		 </article>
+		 <footer>
+		    <p>&copy; Breven G. Hinckley, CIS 130 - SP17 Final Project</p>
+		 </footer>
+	  </div> 
+   </body>
+</html>
